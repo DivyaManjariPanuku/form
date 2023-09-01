@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<center>
+<style>
+body{
+background-image:url("https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-844297.jpg&fm=jpg");
+background-size:cover;
+background-repeat:no-repeat;
+}
+</style>
+<head>
+	<title>
+		Form validation using HTML and JavaScript
+	</title>
+</head>
+
+<body>
+	<h1 style="text-align: center;">
+		REGISTRATION FORM
+	</h1>
+	<font size="3">
+	<form name="RegForm" >
+		<p>
+			Name:
+			<input type="text"  size="65" name="Name" />
+		</p>
+		<br />
+		<p>
+			Address:
+			<input type="text" size="65" name="Address" />
+		</p>
+		<br />
+		<p>
+			E-mail Address:
+			<input type="Email"  size="65" name="EMail" />
+		</p>
+		<br />
+		<p>
+			Password:
+			<input type="text" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$" size="65" name="Password" />
+		</p>
+		<br />
+		<p>
+			Telephone:
+			<input type="text" pattern="[789][0-9]{9}" size="65" name="Telephone" />
+		</p>
+		<br />
+		<p>
+			SELECT YOUR BTECH COURSE
+			<select type="text" value="" name="Subject">
+				<option>--select--</option>
+				<option>CSE</option>
+				<option>IT</option>
+				<option>ECE</option>
+				<option>EEE</option>
+				<option>CIVIL</option>
+				<option>MECH</option>
+			</select>
+		</p>
+		<br />
+		<br />
+		<p>
+			Comments:                                                                                                         
+			<textarea cols="75" rows="4" name="Comment"> </textarea>
+		</p>
+		<p>
+			<input type="submit" value="send" name="Submit" />
+			<input type="reset" value="Reset" name="Reset" />
+		</p>
+	</form>
+</body>
+</html>
